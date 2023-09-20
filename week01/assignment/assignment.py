@@ -124,37 +124,37 @@ def draw_rectangles(tur):
 def draw_tsquares(tur,lock):
     """Draw a group of squares"""
     for x in range(-300, 350, 200):
-        lock.acquire()
         for y in range(-300, 350, 200):
+            lock.acquire()
             draw_square(tur, x - 50, y + 50, 100)
-        lock.release()
+            lock.release()
 
 
 def draw_tcircles(tur,lock):
     """Draw a group of circles"""
     for x in range(-300, 350, 200):
-        lock.acquire()
         for y in range(-300, 350, 200):
+            lock.acquire()
             draw_circle(tur, x, y-2, 50)
-        lock.release()
+            lock.release()
 
 
 def draw_ttriangles(tur,lock):
     """Draw a group of triangles"""
     for x in range(-300, 350, 200):
-        lock.acquire()
         for y in range(-300, 350, 200):
+            lock.acquire()
             draw_triangle(tur, x-30, y-30+10, 60)
-        lock.release()
+            lock.release()
 
 
 def draw_trectangles(tur,lock):
     """Draw a group of Rectangles"""
     for x in range(-300, 350, 200):
-        lock.acquire()
         for y in range(-300, 350, 200):
+            lock.acquire()
             draw_rectangle(tur, x-10, y+5, 20, 15)
-        lock.release()
+            lock.release()
 
 
 def run_no_threads(tur, log, main_turtle):
@@ -218,7 +218,6 @@ def run_with_threads(tur, log, main_turtle):
     t4.start()
     
     t1.join()
-
     t2.join()
     t3.join()
     t4.join()
