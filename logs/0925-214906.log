@@ -1,0 +1,24 @@
+21:49:06| Starting to retrieve data from the server
+21:49:07| -----------------------------------------
+21:49:07| Title   : Revenge of the Sith
+21:49:07| Director: George Lucas
+21:49:07| Producer: Rick McCallum
+21:49:07| Released: 2005-05-19
+21:49:07| 
+21:49:07| Characters: 34
+21:49:42| <class 'str'> Luke Skywalker,  C-3PO,  R2-D2,  Darth Vader,  Leia Organa,  Owen Lars,  Beru Whitesun lars,  Obi-Wan Kenobi,  Anakin Skywalker,  Wilhuff Tarkin,  Chewbacca,  Yoda,  Palpatine,  Nute Gunray,  Padmé Amidala,  Ayla Secura,  Mace Windu,  Ki-Adi-Mundi,  Kit Fisto,  Eeth Koth,  Adi Gallia,  Saesee Tiin,  Plo Koon,  Poggle the Lesser,  Luminara Unduli,  Dooku,  Bail Prestor Organa,  R4-P17,  Shaak Ti,  Grievous,  Tarfful,  Raymus Antilles,  Sly Moore,  Tion Medon, 
+21:49:42| 
+21:49:42| Planets: 13
+21:49:55|  Tatooine,  Alderaan,  Dagobah,  Naboo,  Coruscant,  Utapau,  Mustafar,  Kashyyyk,  Polis Massa,  Mygeeto,  Felucia,  Cato Neimoidia,  Saleucami, 
+21:49:55| 
+21:49:55| Starships: 12
+21:50:07|  CR90 corvette,  Droid control ship,  Jedi starfighter,  Trade Federation cruiser,  Theta-class T-2c shuttle,  Republic attack cruiser,  Naboo star skiff,  Jedi Interceptor,  arc-170,  Banking clan frigte,  Belbullab-22 starfighter,  V-wing, 
+21:50:07| 
+21:50:07| Vehicles: 13
+21:50:20|  Vulture Droid,  LAAT/i,  AT-TE,  Neimoidian shuttle,  Tsmeu-6 personal wheel bike,  Emergency Firespeeder,  Droid tri-fighter,  Oevvaor jet catamaran,  Raddaugh Gnasp fluttercraft,  Clone turbo tank,  Corporate Alliance tank droid,  Droid gunship,  AT-RT, 
+21:50:20| 
+21:50:20| Species: 20
+21:50:40|  Human,  Droid,  Wookie,  Yoda species,  Twi lek,  Toong,  Cerean,  Tholothian,  Iktotchi,  Quermian,  Kel Dor,  Chagrian,  Geonosian,  Mirialan,  Clawdite,  Skakoan,  Muun,  Togruta,  Kaleesh,  Pau an, 
+21:50:40| 
+21:50:40| Total Time To complete = 93.90099400
+21:50:40| There were 0 calls to the server

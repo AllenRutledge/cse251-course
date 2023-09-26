@@ -1,0 +1,24 @@
+21:15:09| Starting to retrieve data from the server
+21:15:10| -----------------------------------------
+21:15:10| Title   : Revenge of the Sith
+21:15:10| Director: George Lucas
+21:15:10| Producer: Rick McCallum
+21:15:10| Released: 2005-05-19
+21:15:10| 
+21:15:10| Characters: 34
+21:15:10| <class 'list'>
+21:15:10| 
+21:15:10| Planets: 13
+21:15:10| 
+21:15:10| 
+21:15:10| Starships: 12
+21:15:10| 
+21:15:10| 
+21:15:10| Vehicles: 13
+21:15:10| 
+21:15:10| 
+21:15:10| Species: 20
+21:15:10| 
+21:15:10| 
+21:15:10| Total Time To complete = 1.03786540
+21:15:10| There were 0 calls to the server

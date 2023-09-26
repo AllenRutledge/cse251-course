@@ -1,0 +1,4 @@
+18:14:09| Starting to retrieve data from the server
+18:14:10| {'people': 'http://127.0.0.1:8790/people/', 'planets': 'http://127.0.0.1:8790/planets/', 'films': 'http://127.0.0.1:8790/films/', 'species': 'http://127.0.0.1:8790/species/', 'vehicles': 'http://127.0.0.1:8790/vehicles/', 'starships': 'http://127.0.0.1:8790/starships/'}
+18:14:10| Total Time To complete = 1.02158600
+18:14:10| There were 0 calls to the server

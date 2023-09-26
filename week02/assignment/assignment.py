@@ -47,14 +47,25 @@ import threading
 from cse251 import *
 
 # Const Values
-TOP_API_URL = 'http://127.0.0.1:8790'
+TOP_API_URL = r'http://127.0.0.1:8790'
 
 # Global Variables
 call_count = 0
 
 
 # TODO Add your threaded class definition here
-
+class Request_thread(threading.Thread):
+    # https://realpython.com/python-requests/
+    def __init__(self, url):
+        threading.Thread.__init__(self)
+        self.url = url
+        self.response = {}
+    def run(self):
+        response = requests.get(self.url)
+        if response.status_code == 200:
+            self.response = response.json()
+        else:
+            print('RESPONSE = ', response.status_code)
 
 # TODO Add any functions you need here
 
@@ -62,16 +73,74 @@ call_count = 0
 def main():
     log = Log(show_terminal=True)
     log.start_timer('Starting to retrieve data from the server')
+    reqF6 = requests.get(f'{TOP_API_URL}/films/6')
+    responseF6 = json.loads(reqF6.text)
+    fTitle = responseF6["title"]
+    fDirector = responseF6["director"]
+    fProducer = responseF6["producer"]
+    fDate = responseF6["release_date"]
+    fChars = responseF6["characters"]
+    fPlanets = responseF6["planets"]
+    fShips = responseF6["starships"]
+    fVehicles = responseF6["vehicles"]
+    fRaces = responseF6["species"]
 
-    # TODO Retrieve Top API urls
-
-    # TODO Retireve Details on film 6
-
-    # TODO Display results
-
+    log.write('-----------------------------------------')
+    log.write(f'Title   : {fTitle}')
+    log.write(f'Director: {fDirector}')
+    log.write(f'Producer: {fProducer}')
+    log.write(f'Released: {fDate}')
+    log.write()
+    log.write(f'Characters: {len(fChars)}')
+    fCharList = str
+    for i in responseF6["characters"]:
+      req = requests.get(i)
+      response = json.loads(req.text)
+      fCharList = (f'{fCharList} {response["name"]}, ')
+    log.write(fCharList)
+    log.write()
+    log.write(f'Planets: {len(fPlanets)}')
+    fCharList = ''
+    for i in responseF6["planets"]:
+      req = requests.get(i)
+      response = json.loads(req.text)
+      fCharList = (f'{fCharList} {response["name"]}, ')
+    log.write(fCharList)
+    log.write()
+    log.write(f'Starships: {len(fShips)}')
+    fCharList = ''
+    for i in responseF6["starships"]:
+      req = requests.get(i)
+      response = json.loads(req.text)
+      fCharList = (f'{fCharList} {response["name"]}, ')
+    log.write(fCharList)
+    log.write()
+    log.write(f'Vehicles: {len(fVehicles)}')
+    fCharList = ''
+    for i in responseF6["vehicles"]:
+      req = requests.get(i)
+      response = json.loads(req.text)
+      fCharList = (f'{fCharList} {response["name"]}, ')
+    log.write(fCharList)
+    log.write()
+    log.write(f'Species: {len(fRaces)}')
+    fCharList = ''
+    for i in responseF6["species"]:
+      req = requests.get(i)
+      response = json.loads(req.text)
+      fCharList = (f'{fCharList} {response["name"]}, ')
+    log.write(fCharList)
+    log.write()
     log.stop_timer('Total Time To complete')
     log.write(f'There were {call_count} calls to the server')
     
 
-if __name__ == "__main__":
-    main()
+if __name__ == '__main__':
+
+    response = requests.get(TOP_API_URL)
+    
+    # Check the status code to see if the request succeeded.
+    if response.status_code == 200:
+        main()
+    else:
+        print('Error in requesting ID')
